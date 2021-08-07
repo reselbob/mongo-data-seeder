@@ -1,6 +1,6 @@
 # mongo-data-seeder
 
-An application that automatically seeds a MongoDB database with random data.
+A command line application that automatically seeds a MongoDB database with random data.
 
 The structure of the document that will be stored in the MongoDB database is:
 
@@ -32,6 +32,18 @@ Once database access is implemented, either locally or on the cloud, run the fol
 
 ## Using the CLI Tool
 
-[TO BE PROVIDED]
+```
+Usage: index.ts - m <MongoDB_CONNECTION_URL> (optional) -r <ROWS_OF_RANDOM_DATA> (optional) -c <MONGODB_DATABASE_NAME> (optional)
+
+Options:
+  -u, --url-mongodb    The URL representing a connection string to a remote instance of MongoDB. Defaults to mongodb://localhost:27017/.  [string]
+  -r, --rows           The  number of rows of random data to inject into the MongoDB database. Defaults to 10.  [string]
+  -d, --database-name  The name of the database in which to store the random data. Defaults to seeder.  [string]
+  -h, --help           Show help  [boolean]
+  -v, --version        Show version number  [boolean]
+
+copyright 2021
+
+```
 
 
