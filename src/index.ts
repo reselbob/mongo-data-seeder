@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import yargs from 'yargs';
-import { run } from './lib/program'
+import { run } from './lib/Program'
 
 const defaultDbName: string = 'seeder';
 const defaultRows: number = 10;
@@ -41,7 +41,7 @@ if (url.indexOf(dbName) > -1) {
   connectionString = `${url}${dbName}`
 }
 
-let question = `\n\nLooks like you want to connect to MongoDB using: ${connectionString}? \n\nStrike your <enter> key to continue. Type 'n' to abort. `;
+let question = `\n\nLooks like you want to connect to MongoDB using: ${connectionString}. \n\nStrike your <enter> key to continue. Type 'n' to abort. `;
 
 const readline = require('readline').createInterface({
   input: process.stdin,
@@ -52,7 +52,7 @@ const readline = require('readline').createInterface({
 
 readline.question(question, (answer: string) => {
   if (answer === 'n') {
-    console.log(`Bye at ${new Date()}`);
+    console.log(`BYE BYE from Seeder at ${new Date()}`);
     process.exit(0);
   }
   else {

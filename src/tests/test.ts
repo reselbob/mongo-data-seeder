@@ -3,8 +3,8 @@ env.config();
 import {expect} from "chai";
 import {before, describe, it} from "mocha";
 
-import {DataController} from "../src/data/DataController";
-import { Seeder } from "../src/lib/Seeder";
+import {DataController} from "../data/DataController";
+import { Seeder } from "../lib/Seeder";
 
 
 
