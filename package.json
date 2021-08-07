@@ -11,6 +11,7 @@
     "create": "npm run build && npm run test",
     "build": "tsc -p .",
     "dev": "ts-node src/index.ts",
+    "prod": "npm install -g && ts-node src/index.ts",
     "test": "mocha -r ts-node/register tests/test.ts --exit"
   },
   "repository": {

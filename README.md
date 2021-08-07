@@ -20,7 +20,7 @@ The structure of the document that will be stored in the MongoDB database is:
 
 To run the test you need either an instance of MongoDB running on your local computer or an access to an instance of MongoDB running in the cloud, for example on [MongoDB Atlas](https://cloud.mongodb.com/).
 
-If you are running in a service, you need to adde the following environment variable, `MONGODB_URL`.
+If you testing by running running in a service, you need to add the following environment variable, `MONGODB_URL` to the test process.
 
 You can put the environment variable in a `.env` file. That `.env` file needs to be at the root of the project file system.
 
