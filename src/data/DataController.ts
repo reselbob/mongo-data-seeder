@@ -19,10 +19,10 @@ export class DataController {
         return this.db.readyState || 0;
     }
 
-    public static async connect(): Promise<Connection> {
+    public static async connect(mongoDbUrl: string): Promise<Connection> {
         //Get the URL
 
-        const mongoDbUrl = process.env.MONGODB_URL || 'mongodb://localhost:27017/users'
+        if(! mongoDbUrl) throw new Error('There is no value for the required parameter: mongoDbUrl in the method: connect()');
 
         console.log({mongoDbUrl})
 
