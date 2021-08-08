@@ -13,7 +13,7 @@ The structure of the document that will be stored in the MongoDB database is:
 
 
 ## Installation
-`sudo npm run prod`
+`sudo npm run build`
 
 ## Testing
 
@@ -31,7 +31,7 @@ Once database access is implemented, either locally or on the cloud, run the fol
 
 To get the `mongo-data-seeder` running and a command line utility run the following command as `sudo`:
 
-`sudo npm run prod`
+`sudo npm run deploy`
 
 It will take a minute or two for the utility to install. The utility's name is `seeder`. When the installation process is finished you'll see the `--help` output as follows:
 
@@ -49,13 +49,15 @@ copyright 2021
 
 ```
 
-The following is an example of using `seeder` to randomly generate to a fictitious remote MongoDB database at:
+The following is an example of using `seeder` to randomly generate to a fictitious remote MongoDB database at `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`:
 
 ```
 -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder
 ```
 
 You'll get results similar to the following:
+
+----
 
 ```
 Hi from MongoDB Data Seeder at Sun Aug 08 2021 16:16:16 GMT+0000 (Coordinated Universal Time)
@@ -87,4 +89,4 @@ Seeder created 10 rows of random data Sun Aug 08 2021 16:16:22 GMT+0000 (Coordin
 
 ```
 
-
+----

@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npm install && npx tsc",
     "dev": "ts-node src/index.ts",
-    "prod": "npm install -g && npx tsc && tsc && npm link && seeder --help",
+    "deploy": "npm install -g && npx tsc && tsc && npm link && seeder --help",
     "test": "mocha -r ts-node/register src/tests/test.ts --exit"
   },
   "repository": {
