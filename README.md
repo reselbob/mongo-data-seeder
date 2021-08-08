@@ -103,7 +103,7 @@ copyright 2021
 The following is an example of using `seeder` to randomly generate to a fictitious remote MongoDB database at `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`:
 
 ```
--u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder
+seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder
 ```
 
 You'll get results similar to the following:
