@@ -1,11 +1,11 @@
 # mongo-data-seeder
 
 A command line application that automatically seeds a MongoDB database with random data.
-
-* Structure of Random Data
-* Installation
-* Testing
-* Using `mongo-data-seeder` as a Command Line Utility
+- [mongo-data-seeder](#mongo-data-seeder)
+  - [Structure of Random Data](#structure-of-random-data)
+  - [Installation](#installation)
+  - [Testing](#testing)
+  - [Using `mongo-data-seeder` as a Command Line Utility](#using-mongo-data-seeder-as-a-command-line-utility)
 
 ## Structure of Random Data
 
