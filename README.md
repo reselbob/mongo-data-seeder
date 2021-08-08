@@ -6,6 +6,7 @@ A command line application that automatically seeds a MongoDB database with rand
   - [Installation](#installation)
   - [Testing](#testing)
   - [Using `mongo-data-seeder` as a Command Line Utility](#using-mongo-data-seeder-as-a-command-line-utility)
+  - [Running as a Docker Container](#running-as-a-docker-container)
 
 ## Structure of Random Data
 
@@ -141,3 +142,63 @@ Seeder created 10 rows of random data Sun Aug 08 2021 16:16:22 GMT+0000 (Coordin
 ```
 
 ----
+
+## Running as a Docker Container
+
+To run `mongo-data-seeder` from within a Docker container, take the following steps:
+
+**Step 1:** Clone the source code for this project into your development environment:
+
+`git clone https://github.com/reselbob/mongo-data-seeder.git`
+
+**Step 2:** Go to the source code directory.
+
+`cd mongo-data-seeder`
+
+**Step 3:** Build the Docker image, which be named, `seeder`:
+
+`docker build -t seeder .`
+
+**Step 4:** Create a container using the Docker image named, `seeder`. Run the container so that you can access the source code working directory from a command line within the container. The name of the container will be `myseeder`.
+
+Execute the following command to execute the tasks described above:
+
+`docker run --name myseeder --rm -ti  seeder /bin/bash`
+
+You'll get output similar to the following:
+
+`root@c898ded1dad7:/app#`
+
+**Step 5:** Deploy `seeder` at the container's command line by executing the following command:
+
+`npm run deploy`
+
+You'll get output similar to the following:
+
+```
+.
+.
+.
+Options:
+  -u, --url-mongodb    The URL representing a connection string to a remote instance of MongoDB. Defaults to mongodb://localhost:27017/.  [string]
+  -r, --rows           The  number of rows of random data to inject into the MongoDB database. Defaults to 10.  [string]
+  -d, --database-name  The name of the database in which to store the random data. Defaults to seeder.  [string]
+  -h, --help           Show help  [boolean]
+  -v, --version        Show version number  [boolean]
+
+copyright 2021
+```
+
+You can now enter a `seeder` command similar to the following to inject random data into data the fictitious MongoDB database found at, `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder` :
+
+`seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`
+
+**Step 6:** To exit the container and delete it from your development environment, type ...
+
+`exit`
+
+... at the container's command line.
+
+**Step 7:** To removed Docker image, `seeder` from your development environment, type:
+
+`docker image rm -f seeder`
