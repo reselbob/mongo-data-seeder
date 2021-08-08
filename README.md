@@ -83,7 +83,7 @@ Finished seeding at Sun Aug 08 2021 16:36:58 GMT+0000 (Coordinated Universal Tim
 
 ## Using `mongo-data-seeder` as a Command Line Utility
 
-To get the `mongo-data-seeder` running and a command line utility run the following command as `sudo`:
+To get the `mongo-data-seeder` running as a command line utility, run the following command as `sudo`:
 
 `sudo npm run deploy`
 
@@ -103,7 +103,9 @@ copyright 2021
 
 ```
 
-The following is an example of using `seeder` to randomly generate to a fictitious remote MongoDB database at `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`:
+Now you can use `seeder` as a command line utility.
+
+The following is an example of using `seeder` to randomly generate data to a fictitious remote MongoDB database at `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`:
 
 ```
 seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder
@@ -194,8 +196,6 @@ copyright 2021
 You can now enter a `seeder` command similar to the following to inject random data into the fictitious MongoDB database found at, `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder` :
 
 `seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`
-
-
 
 **Step 6:** To exit the container and delete it from your development environment, type ...
 
