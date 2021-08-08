@@ -30,9 +30,11 @@ To install the dependency packages for `mongo-data-seeder` and the [Typescript c
 
 To run the test you need either an instance of MongoDB running on your local computer or an access to an instance of MongoDB running in the cloud, for example on [MongoDB Atlas](https://cloud.mongodb.com/).
 
-If you testing by running running in a service, you need to add the following environment variable, `MONGODB_URL` to the test process.
+**IMPORTANT!!!**  If you're testing by running against an external instance of MongoDB, you need to tell `seeder` the location of the remote instance as well as the credentials required to access it. You do this by adding the required information as a URL attached to the environment variable, `MONGODB_URL`.
 
-**IMPORTANT!!!** You can put the environment variable in a `.env` file. That `.env` file needs to be at the root of the project file system. The following is an example of using the `echo` command to inject the environment variable and value into the file, `.env`.
+You can put the environment variable in a `.env` file. That `.env` file needs to be at the root of the project file system.
+
+The following is an example of using the `echo` command to inject the environment variable and value into the file, `.env`.
 
 ```
  echo MONGODB_URL=mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder > .env
@@ -192,6 +194,8 @@ copyright 2021
 You can now enter a `seeder` command similar to the following to inject random data into the fictitious MongoDB database found at, `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder` :
 
 `seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`
+
+
 
 **Step 6:** To exit the container and delete it from your development environment, type ...
 
