@@ -32,7 +32,7 @@ To run the test you need either an instance of MongoDB running on your local com
 
 **IMPORTANT!!!**  If you're testing by running against an external instance of MongoDB, you need to tell `seeder` the location of the remote instance as well as the credentials required to access it. You do this by adding the required information as a URL attached to the environment variable, `MONGODB_URL`.
 
-You can put the environment variable in a `.env` file. That `.env` file needs to be at the root of the project file system.
+You can put the environment variable information in a `.env` file. That `.env` file needs to be at the root of the project file system.
 
 The following is an example of using the `echo` command to inject the environment variable and value into the file, `.env`.
 
