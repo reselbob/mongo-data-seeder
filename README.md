@@ -155,7 +155,7 @@ To run `mongo-data-seeder` from within a Docker container, take the following st
 
 `cd mongo-data-seeder`
 
-**Step 3:** Build the Docker image, which be named, `seeder`:
+**Step 3:** Build the Docker image, which will be named, `seeder`:
 
 `docker build -t seeder .`
 
@@ -189,7 +189,7 @@ Options:
 copyright 2021
 ```
 
-You can now enter a `seeder` command similar to the following to inject random data into data the fictitious MongoDB database found at, `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder` :
+You can now enter a `seeder` command similar to the following to inject random data into the fictitious MongoDB database found at, `mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder` :
 
 `seeder -u mongodb+srv://cooluser:9EI0O0xxxxxxRR11@cluster0.oewnd.mongodb.net/seeder`
 
