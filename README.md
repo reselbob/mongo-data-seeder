@@ -20,6 +20,9 @@ The structure of the document that will be stored in the MongoDB database is:
 
 
 ## Installation
+
+To install the dependency packages for `mongo-data-seeder` and the [Typescript compiler](https://www.typescriptlang.org/docs/handbook/compiler-options.html) (`tsc`) execute the following command:
+
 `sudo npm run build`
 
 ## Testing
